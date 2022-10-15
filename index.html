@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>labwc</title>
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+
+  <style>
+    body {
+	--color-bg: #0d1117;
+	--color-hl: #333;
+	--color-fg: #c9d1d9;
+	--color-link: #ffbce3;
+	--color-subtle: #555;
+	--color-yellow: #f0d70f;
+	--color-red: #d02f90;
+	--pal1: #262A85;
+	--pal2: #29488F;
+	--pal3: #285577;
+	--pal4: #297E8F;
+	--pal5: #26857B;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-background="#0d1117">
+        <img src="img/labwc.png" width="200" height="200" />
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="500">
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="2000" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+        <div class="r-hstack justify-center">
+          <div data-id="box1" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box2" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box3" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box4" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box5" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box6" style="background: var(--color-bg); width: 10px; height: 10px; margin: 10px; border-radius: 5px;"></div>
+        </div>
+        <p style="margin-top: 100px; color: var(--color-fg);">labwc.github.io</p>
+      </section>
+      <section data-background="#0d1117" data-autoslide="4000" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+        <div class="r-hstack justify-center">
+          <div data-id="box1" data-auto-animate-delay="0"   style="background: var(--pal1);     width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box2" data-auto-animate-delay="0.1" style="background: var(--pal2);     width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box3" data-auto-animate-delay="0.2" style="background: var(--pal3);     width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box4" data-auto-animate-delay="0.1" style="background: var(--pal4);     width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box5" data-auto-animate-delay="0.2" style="background: var(--pal5);     width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+          <div data-id="box6" data-auto-animate-delay="0.1" style="background: var(--color-bg); width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+        </div>
+        <p style="margin-top: 100px; color: var(--color-fg);">Creating a window-stacking Wayland compositor...</p>
+      </section>
+      <section data-background="#0d1117" data-autoslide="2000" data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+        <div class="r-stack">
+          <div data-id="box5" style="background: var(--pal3);     width: 640px; height: 480px; border-radius: 0px;"></div>
+          <div data-id="box6" style="background: var(--color-bg); width: 630px; height: 470px; border-radius: 0px;"></div>
+          <div data-id="box3" style="background: var(--pal3);     width: 640px; height: 100px; border-radius: 4px;  position: relative; top: -240px;"></div>
+          <div data-id="box1" style="background: var(--pal1);     width: 40px;  height: 40px;  border-radius: 40px; position: relative; top: -240px; left: 160px;"></div>
+          <div data-id="box2" style="background: var(--pal2);     width: 40px;  height: 40px;  border-radius: 40px; position: relative; top: -240px; left: 220px;"></div>
+          <div data-id="box4" style="background: var(--pal4);     width: 40px;  height: 40px;  border-radius: 40px; position: relative; top: -240px; left: 280px;"></div>
+        </div>
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <h2>Humble beginnings</h2>
+          <ul>
+            <li>Launching an application with bemenu (Alt-F3)</li>
+            <li>Launching an application with the root menu (click on desktop)</li>
+	    <li>Cycling between windows (Alt-Tab)<br />Note the preview</li>
+          </ul>
+      </section>
+
+      <section data-background="#000000" data-background-video="video/01-alt-tabbing.webm" data-autoslide="20000">
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <h2>Window Snapping</h2>
+          <ul>
+            <li>Drag window to top edge to maximize</li>
+            <li>Drag window to left/right edge to SnapToEdge</li>
+          </ul>
+      </section>
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <p data-id="code-title">~/.config/labwc/rc.xml</p>
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+<!-- Set range to 0 to disable window snapping completely -->
+<snapping>
+  <range>1</range>
+  <topMaximize>yes</topMaximize>
+</snapping>
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/02-snapping.webm" data-autoslide="8000">
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="5000">
+        <h2>Drag-and-drop</h2>
+          <ul>
+            <li>Drag a folder between two nautilus windows</li>
+            <li>SnapToEdge using (super-arrow keybind)</li>
+          </ul>
+      </section>
+      <section data-background="#000000" data-background-video="video/03-drag-and-drop.webm" data-autoslide="15000">
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="5000">
+        <h2>Theme</h2>
+          <ul>
+            <li>Change themes with<br />https://github.com/labwc/labwc-tweaks</li>
+	    <li>Follow the GTK theme with<br />https://github.com/labwc/labwc-gtktheme</li>
+          </ul>
+      </section>
+      <section data-background="#000000" data-background-video="video/04-change-theme.webm" data-autoslide="9000">
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <h2>Workspaces</h2>
+          <ul>
+            <li>Move windows between workspaces</li>
+            <li>Move between workspaces with keyboard shortcut</li>
+          </ul>
+      </section>
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <p data-id="code-title">~/.config/labwc/rc.xml</p>
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+<desktops>
+  <names>
+    <name>Workspace 1</name>
+    <name>Workspace 2</name>
+  </names>
+</desktops>
+<keyboard>
+  <keybind key="W-S-Left">
+    <action name="GoToDesktop" to="left"/>
+  </keybind>
+  <keybind key="W-S-Right">
+    <action name="GoToDesktop" to="right"/>
+  </keybind>
+</keyboard>
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/05-workspaces.webm" data-autoslide="28000">
+      </section>
+
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <h2>Panels</h2>
+          <ul>
+            <li>See tiled windows resize when layer-client (waybar) starts</li>
+            <li>Minimize window using foreign-toplevel protocol</li>
+          </ul>
+      </section>
+      <section data-background="img/labwc-background.png" data-autoslide="4000">
+        <p data-id="code-title">~/.config/labwc/autostart</p>
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+waybar >/dev/null 2>&1 &
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/06-panels.webm" data-autoslide="28000">
+      </section>
+
+
+      <section data-background="#0d1117" data-autoslide="4000">
+        <h2>Snap/Move to Edge</h2>
+          <ul>
+            <li>MoveToEdge window action</li>
+            <li>SnapToEdge window action</li>
+          </ul>
+      </section>
+      <section data-background="#0d1117" data-autoslide="4000">
+        <p data-id="code-title">MoveToEdge</p>
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+<keyboard>
+  <keybind key="A-Left">
+    <action name="MoveToEdge">
+      <direction>left</direction>
+    </action>
+  </keybind>
+</keyboard>
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/07-move-to-edge.webm" data-autoslide="4000">
+      </section>
+      <section data-background="#0d1117" data-autoslide="4000">
+        <p data-id="code-title">SnapToEdge</p>
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+<keyboard>
+  <keybind key="W-Left">
+    <action name="SnapToEdge">
+      <direction>left</direction>
+    </action>
+  </keybind>
+</keyboard>
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/08-snap-to-edge.webm" data-autoslide="4000">
+      </section>
+
+      <section data-background="#0d1117">
+        <h2>Thank You</h2>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="reveal.js/plugin/highlight/highlight.js"></script>
+  <script>
+  Reveal.initialize({
+    controls: false,
+    progress: false,
+    transition: 'fade',
+    autoSlideStoppable: false,
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+  });
+  </script>
+</body>
+</html>
