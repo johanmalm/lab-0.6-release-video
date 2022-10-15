@@ -143,10 +143,10 @@
 </desktops>
 <keyboard>
   <keybind key="W-S-Left">
-    <action name="GoToDesktop" to="left"/>
+    <action name="GoToDesktop" to="left" />
   </keybind>
   <keybind key="W-S-Right">
-    <action name="GoToDesktop" to="right"/>
+    <action name="GoToDesktop" to="right" />
   </keybind>
 </keyboard>
         </code></pre>
@@ -183,9 +183,7 @@ waybar >/dev/null 2>&1 &
         <pre data-id="code-animation"><code class="hljs" data-trim>
 <keyboard>
   <keybind key="A-Left">
-    <action name="MoveToEdge">
-      <direction>left</direction>
-    </action>
+    <action name="MoveToEdge" direction="left" />
   </keybind>
 </keyboard>
         </code></pre>
@@ -194,12 +192,10 @@ waybar >/dev/null 2>&1 &
       </section>
       <section data-background="#0d1117" data-autoslide="4000">
         <p data-id="code-title">SnapToEdge</p>
-        <pre data-id="code-animation"><code class="hljs" data-trim>
+        <pre data-id="code-animation"><code class="xml" data-trim>
 <keyboard>
   <keybind key="W-Left">
-    <action name="SnapToEdge">
-      <direction>left</direction>
-    </action>
+    <action name="SnapToEdge" direction="left" />
   </keybind>
 </keyboard>
         </code></pre>
