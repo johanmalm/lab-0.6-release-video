@@ -1,0 +1,9 @@
+Gimp notes
+
+https://graphicdesign.stackexchange.com/questions/76414/how-to-apply-grain-texture-effect-in-gimp
+
+Create a layer group with
+- A fill
+- A Texture layer with a gradient
+
+Apply Filter->noise->spread
